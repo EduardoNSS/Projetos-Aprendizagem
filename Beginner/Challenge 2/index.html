@@ -8,27 +8,121 @@
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" type="text/css" href="style.css">
 
+  <script>
+
+    function hide(q){
+      
+
+      if(q == 'q1'){
+        let x = document.getElementById('q-1');
+
+        if(x.style.display === 'block'){
+          x.style.display = 'none';
+        }else{
+          x.style.display = 'block';
+        }
+      }
+
+      if(q == 'q2'){
+        let x = document.getElementById('q-2');
+        if(x.style.display === 'block'){
+          x.style.display = 'none';
+        }else{
+          x.style.display = 'block';
+        }
+      }
+
+      if(q == 'q3'){
+        let x = document.getElementById('q-3');
+        if(x.style.display === 'block'){
+          x.style.display = 'none';
+        }else{
+          x.style.display = 'block';
+        }
+      }
+
+      if(q == 'q4'){
+        let x = document.getElementById('q-4');
+        if(x.style.display === 'block'){
+          x.style.display = 'none';
+        }else{
+          x.style.display = 'block';
+        }
+      }
+
+      if(q == 'q5'){
+        let x = document.getElementById('q-5');
+        if(x.style.display === 'block'){
+          x.style.display = 'none';
+        }else{
+          x.style.display = 'block';
+        }
+      }
+      
+    }
+
+  </script>
+
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <div id="container">
+    <div class="row">
+      <div class="col-sm" id="ilustracao">
+        <img src="images/bg-pattern-desktop.svg" width="400px" id="shadow">
+        <img src="images/illustration-box-desktop.svg" id="box">
+        
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+      </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+      <div class="col-sm p-5" id="faq">
+        <h2 class="font-weight-bold">FAQ</h2>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        <p onclick="hide('q1')" id="q1">How many team members can I invite?</p>
+        <div id="q-1" class="ans">
+          You can invite up to 2 additional users on the Free plan. There is no limit on 
+          team members for the Premium plan.
+        </div>
+        <hr>            
+       
+      
+        <p onclick="hide('q2')" id="q2">What is the maximum file upload size?</p>
+        <div id="q-2" class="ans">
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </div>
+        <hr>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        <p onclick="hide('q3')" id="q3">How do I reset my password?</p>
+        <div id="q-3" class="ans">
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.
+        </div>
+        <hr>
+
+        <p onclick="hide('q4')" id="q4">Can I cancel my subscription?</p>
+        <div id="q-4" class="ans">
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </div>
+        <hr>
+
+      
+        <p onclick="hide('q5')" id="q5">Do you provide additional support?</p>
+        <div id="q-5" class="ans">
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </div>
+        <hr>
+
+      </div>
+
+    </div>
+  </div>
+  
+
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
