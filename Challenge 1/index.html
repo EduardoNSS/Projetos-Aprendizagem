@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <style>
+    /************ Global
+*************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:hsl(216, 100%, 97%);
+}
+
+.container{
+    max-width: 720px;
+}
+
+.brs{
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+
+
+/************** Text-colors
+******************************************/
+.cyan{
+    color: hsl(179, 62%, 43%);
+}
+
+.yellow{
+    color: hsl(71, 73%, 54%);
+}
+
+.gray{
+    color: hsl(204, 43%, 93%)
+}
+
+.blue{
+    color: hsl(218, 22%, 67%);
+}
+
+/************** Content
+********************************************/
+#main{
+    border-radius: 10px 10px 0 0;
+    background: white;
+}
+
+#sub{
+    background: hsl(179, 62%, 43%);
+    color: white;
+    border-radius: 0 0 0 10px;
+}
+
+#why{
+    background: hsl(179, 62%, 43%);
+    color: white;
+    opacity: 0.8;
+    border-radius: 0 0 10px 0;
+}
+
+.btn-yellow{
+    background:  hsl(71, 73%, 54%);
+    color:white;
+    box-shadow: 1px 1px 10px gray;
+}
+
+.btn-yellow:hover{
+    background:  hsl(71, 52%, 50%);
+    box-shadow: 2px 2px 10px black;
+}
+
+.display-4{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .container{
+        max-width: 80%;
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+
+    #sub{
+        border-radius: 0;
+    }
+
+    #why{
+        border-radius: 0 0 10px 10px;        
+    }
+    
+    
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .container{
+        max-width: 80%;
+    }
+ }
+  </style>
+  
+</head>
+
+<body>
+  <div class="container brs mt-5">
+  
+  <div class="row">
+    <div id="main" class="col p-4">
+      <h3 class="cyan">Join our community</h3>
+  
+      <h5 class="yellow font-weight-bold">30-day, hassle-free money back guarantee</h5>
+  
+      <p class="blue">Gain access to our full library of tutorials along with expert code reviews. 
+      Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-sm-6 p-4" id="sub">
+        <h5 class="font-weight-bold">Monthly Subscription</h5>
+    
+         <p><span class="display-4">&dollar;29</span><span class="gray"> per month</span></p>
+    
+        <p>Full access for less than &dollar;1 a day</p>
+    
+         <button class="btn btn-lg btn-block btn-yellow">
+          Sign Up
+         </button>
+      </div>
+    
+      <div class="col-sm-6 p-4" id="why">
+        <h5 class="font-weight-bold">Why Us</h5>
+        
+        <ul class="list-unstyled gray">
+          <li>Tutorials by industry experts</li>
+          <li>Peer &amp; expert code review</li>
+          <li>Coding exercises</li>
+          <li>Access to our GitHub repos</li>
+          <li>Community forum</li>
+          <li>Flashcard decks</li>
+          <li>New videos every week</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+  
+</body>
+</html>
