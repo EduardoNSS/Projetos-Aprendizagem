@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="utf-8">
+
+        <!-- Estilo -->
+        <link rel="stylesheet" href="estilo.css" type="text/css">
+
+        <!-- script -->
+        <script src="app.js"> </script>
+    </head>
+
+    <body>
+        <div class="caixa">
+            <input id="visor" type="text" disabled placeholder="0">
+            <div>
+                <button onclick="limpar()" id="AC">AC</button>
+                <button onclick="inverter()">+/-</button>
+                <button onclick="digitar('/')">÷</button>
+            </div>
+            <div>
+                <button onclick="digitar(7)" class="bd">7</button>
+                <button onclick="digitar(8)" class="bd">8</button>
+                <button onclick="digitar(9)" class="bd">9</button>
+                <button onclick="digitar('*')">x</button>
+            </div>
+            <div>
+                <button onclick="digitar(4)" class="bd">4</button>
+                <button onclick="digitar(5)" class="bd">5</button>
+                <button onclick="digitar(6)" class="bd">6</button>
+                <button onclick="digitar('-')">-</button>
+            </div>
+            <div>
+                <button onclick="digitar(1)" class="bd">1</button>
+                <button onclick="digitar(2)" class="bd">2</button>
+                <button onclick="digitar(3)" class="bd">3</button>
+                <button onclick="digitar('+')">+</button>
+            </div>
+            <div>
+                <button onclick="digitar(0)" id="zero">0</button>
+                <button onclick="digitar('.')">.</button>
+                <button onclick="resultado()">=</button>
+            </div>
+
+            <div id="historico">
+               
+            </div>
+        </div>
+
+        
+        
+    </body>
+</html>
