@@ -3,7 +3,7 @@
 <h3>Descrição: </h3>
 <p>O projeto foi desenvolvido com o objetivo de colocar em prática todos os conhecimentos adquiridos até o momento.</p>
 <p>Para utilizar o site, o usuário precisa estar logado na plataforma. Qualquer usuário logado pode abrir chamados para o help desk.</p>
-<br>Caso o usuário possua um perfil administrativo ele pode consultar todos os chamados abertos, caso contrário ele pode consultar somentes seus próprios chamados.
+<br>Caso o usuário possua um perfil administrativo ele pode consultar todos os chamados abertos, caso contrário ele pode consultar somente seus próprios chamados.
 <img src="prints/help_desk_1.png">
 <img src="prints/help_desk_2.png">
 <img src="prints/help_desk_3.png">
